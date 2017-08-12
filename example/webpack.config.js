@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const autoprefixer = require('autoprefixer')
 
 const cwd = process.cwd()
 
@@ -28,7 +29,14 @@ module.exports = {
         fallback: "style-loader",
         use: [
           'css-loader', {
-            loader: 'postcss-loader'
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => [
+                autoprefixer({
+                  browsers: ['Android 4', 'last 5 versions', '> 5%', 'iOS 7']
+                })
+              ]
+            }
           },
           'sass-loader?sourceMap'
         ]
@@ -41,6 +49,11 @@ module.exports = {
       hash: false,
       filename: path.join(cwd, 'index.html'),
       inject: true
-    })
+    }),
+    new ExtractTextPlugin({
+      filename: 'css/[name].css'
+      // 是否从所有追加的 chunk 中提取样式文件
+      // allChunks: true
+    }),
   ]
 }

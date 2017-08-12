@@ -75,8 +75,8 @@ module.exports = {
 ```
 ## Run Example
 ```
-git clone https://github.com/skidxjq/react-markdown-loader
-cd react-markdown-loader
+git clone https://github.com/skidxjq/react-for-markdown-loader
+cd react-for-markdown-loader
 npm run example
 open http://localhost:8080
 ```
