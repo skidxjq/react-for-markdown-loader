@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skidxjq/react-markdown-loader.git"
+    "url": "git+https://github.com/skidxjq/react-for-markdown-loader.git"
   },
   "author": "skidxjq",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/skidxjq/react-markdown-loader/issues"
+    "url": "https://github.com/skidxjq/react-for-markdown-loader/issues"
   },
-  "homepage": "https://github.com/skidxjq/react-markdown-loader#readme",
+  "homepage": "https://github.com/skidxjq/react-for-markdown-loader#readme",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
@@ -24,14 +24,19 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-1": "^6.22.0",
     "babel-preset-stage-2": "^6.22.0",
-    "highlight.js": "^9.12.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "github-markdown-css": "^2.3.0",
     "html-webpack-plugin": "^2.30.1",
+    "postcss-loader": "^2.0.6",
     "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
     "webpack": "^3.5.3",
-    "webpack-dev-server": "^2.7.1",
-    "react-dom": "^15.6.1"
+    "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
+    "highlight.js": "^9.12.0",
     "loader-utils": "^1.1.0",
     "markdown-it": "^8.3.2",
     "rimraf": "^2.6.1"
