@@ -1,0 +1,39 @@
+{
+  "name": "react-for-markdown-loader",
+  "version": "1.0.0",
+  "description": "require a md file as a React Component",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "cd example && webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skidxjq/react-markdown-loader.git"
+  },
+  "author": "skidxjq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skidxjq/react-markdown-loader/issues"
+  },
+  "homepage": "https://github.com/skidxjq/react-markdown-loader#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-1": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "highlight.js": "^9.12.0",
+    "html-webpack-plugin": "^2.30.1",
+    "react": "^15.6.1",
+    "webpack": "^3.5.3",
+    "webpack-dev-server": "^2.7.1",
+    "react-dom": "^15.6.1"
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0",
+    "markdown-it": "^8.3.2",
+    "rimraf": "^2.6.1"
+  }
+}
