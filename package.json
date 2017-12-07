@@ -1,6 +1,6 @@
 {
   "name": "react-for-markdown-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "require a md file as a React Component",
   "main": "lib/index.js",
   "scripts": {
